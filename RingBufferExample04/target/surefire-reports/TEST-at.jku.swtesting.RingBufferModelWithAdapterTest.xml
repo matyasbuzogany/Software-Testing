@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="at.jku.swtesting.RingBufferModelWithAdapterTest" time="0.29" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/test-classes:/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/classes:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/matyasbuzogany/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/Users/matyasbuzogany/.m2/repository/nz/ac/waikato/modeljunit/modeljunit/2.5/modeljunit-2.5.jar:/Users/matyasbuzogany/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-algorithms/2.0.1/jung-algorithms-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sourceforge/collections/collections-generic/4.01/collections-generic-4.01.jar:/Users/matyasbuzogany/.m2/repository/colt/colt/1.2.0/colt-1.2.0.jar:/Users/matyasbuzogany/.m2/repository/concurrent/concurrent/1.3.4/concurrent-1.3.4.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-api/2.0.1/jung-api-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-graph-impl/2.0.1/jung-graph-impl-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-io/2.0.1/jung-io-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar:/Users/matyasbuzogany/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-jai/2.0.1/jung-jai-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-visualization/2.0.1/jung-visualization-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/junit/junit/4.4/junit-4.4.jar:/Users/matyasbuzogany/.m2/repository/org/uispec4j/uispec4j/2.4/uispec4j-2.4-jdk16.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Users/matyasbuzogany/Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/surefire/surefirebooter1237805623988365857.jar /Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/surefire 2022-05-09T16-31-20_728-jvmRun1 surefire13726006080307968083tmp surefire_010690677056101968572tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/test-classes:/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/classes:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/matyasbuzogany/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/matyasbuzogany/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/Users/matyasbuzogany/.m2/repository/nz/ac/waikato/modeljunit/modeljunit/2.5/modeljunit-2.5.jar:/Users/matyasbuzogany/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-algorithms/2.0.1/jung-algorithms-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sourceforge/collections/collections-generic/4.01/collections-generic-4.01.jar:/Users/matyasbuzogany/.m2/repository/colt/colt/1.2.0/colt-1.2.0.jar:/Users/matyasbuzogany/.m2/repository/concurrent/concurrent/1.3.4/concurrent-1.3.4.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-api/2.0.1/jung-api-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-graph-impl/2.0.1/jung-graph-impl-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-io/2.0.1/jung-io-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/org/codehaus/woodstox/wstx-asl/3.2.6/wstx-asl-3.2.6.jar:/Users/matyasbuzogany/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-jai/2.0.1/jung-jai-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/net/sf/jung/jung-visualization/2.0.1/jung-visualization-2.0.1.jar:/Users/matyasbuzogany/.m2/repository/junit/junit/4.4/junit-4.4.jar:/Users/matyasbuzogany/.m2/repository/org/uispec4j/uispec4j/2.4/uispec4j-2.4-jdk16.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/matyasbuzogany"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="/Users/matyasbuzogany/Library/Java/JavaVirtualMachines/openjdk-15.0.2/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04/target/surefire/surefirebooter1237805623988365857.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="matyasbuzogany"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/matyasbuzogany/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/1g/c7zgkmnx1093clp9m1rjlnww0000gn/T/"/>
+    <property name="idea.version" value="2020.3.1"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="/Users/matyasbuzogany/Documents/Uni/Mesteri/Semester2/Software Testing/RingBufferExample04"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/matyasbuzogany/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="test" classname="at.jku.swtesting.RingBufferModelWithAdapterTest" time="0.227">
+    <system-out><![CDATA[done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, dequeue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, size, EMPTY)
+done Random reset(true)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done Random reset(true)
+done (EMPTY, peekEmpty, EMPTY)
+done Random reset(true)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done Random reset(true)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done Random reset(true)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, dequeue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, dequeue, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done Random reset(true)
+done (EMPTY, size, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, dequeue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, enqueue, FULL)
+done (FULL, dequeue, FILLED)
+done (FILLED, dequeue, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, dequeue, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, size, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, peekEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done Random reset(true)
+done (EMPTY, dequeueFromEmptyBuffer, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done Random reset(true)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, isEmpty, EMPTY)
+done (EMPTY, enqueue, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, enqueue, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, isEmpty, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, size, FILLED)
+done (FILLED, peekEmpty, FILLED)
+done (FILLED, enqueue, FULL)
+done (FULL, enqueueWhenFull, FULL)
+done (FULL, enqueueWhenFull, FULL)
+done (FULL, size, FULL)
+done (FULL, enqueueWhenFull, FULL)
+done (FULL, size, FULL)
+done (FULL, isEmpty, FULL)
+done (FULL, enqueueWhenFull, FULL)
+done (FULL, peekEmpty, FULL)
+done (FULL, enqueueWhenFull, FULL)
+done (FULL, size, FULL)
+done (FULL, isEmpty, FULL)
+done (FULL, dequeue, FILLED)
+done (FILLED, peek, FILLED)
+done (FILLED, dequeue, FILLED)
+action coverage: 8/8
+state coverage: 3/3
+transition coverage: 18/18
+]]></system-out>
+  </testcase>
+</testsuite>
